@@ -8,10 +8,8 @@ Bu proje, “100 derste MVC” eğitimi sonunda, öğrendiklerinizi uygulamaya
 
 ### 🌟 Temel Özellikler  
 - Ders modülleri listesi ve detay sayfası: Her ders için içerik, video bağlantısı, örnek proje.  
-- Öğrenci proje yükleme ve yönetimi: Öğrenciler kendi projelerini sisteme yükleyebilir ve durumlarını takip edebilir.  
-- Kullanıcı rolleri: Öğrenci, Eğitmen, Yönetici gibi farklı roller tanımlıdır ve erişim kontrolü vardır.  
+- Kullanıcı rolleri:  Eğitmen, Yönetici gibi farklı roller tanımlıdır ve erişim kontrolü vardır.  
 - Yönetici paneli: Ders, içerik, kullanıcı ve proje yönetimi yapılabilir.  
-- İlerleme takibi: Öğrencinin tamamladığı dersler, yüklediği projeler ve ilerleme durumu izlenebilir.  
 - Responsive ve modern arayüz: Hem mobilde hem masaüstünde uyumlu, kullanıcı dostu tasarım.  
 - Katmanlı mimari ve iyi yapılandırılmış kod: MVC yapısı + servis katmanı + repository katmanı vb.
 
@@ -39,15 +37,13 @@ Veritabanı yapılandırması şu şekilde özetlenebilir:
 - Kullanılan sistem: Microsoft SQL Server (ya da LocalDB)  
 - Code First yaklaşımıyla Entity Framework aracılığıyla model‑tablo eşlemeleri yapılmıştır.  
 - Ana tablolar ve ilişkiler:  
-  - **Users** tablosu (Öğrenci, Eğitmen, Yönetici rolleri)  
+  - **Users** tablosu ( Eğitmen, Yönetici rolleri)  
   - **Courses** tablosu (ders içerikleri)  
-  - **Projects** tablosu (öğrenci proje yüklemeleri)  
   - İlişkiler: Users ↔ Projects (1‑çok), Courses ↔ Projects (1‑çok)
 
 ### 🧱 Modüller / Alt Fonksiyonlar  
-- Kullanıcı Girişi & Kayıt: Öğrenci, Eğitmen, Yönetici rolleriyle kayıt/giriş işlemleri.  
+- Kullanıcı Girişi & Kayıt:  Eğitmen, Yönetici rolleriyle kayıt/giriş işlemleri.  
 - Ders Listeleme & Detay: Tüm derslerin listelenmesi, detay sayfası gösterimi.  
-- Ödev/Proje Yükleme: Öğrencilerin projelerini sisteme yükleyebilmesi, yükleme durumunun takip edilmesi.  
 - Yönetici Paneli: Ders ekleme/düzenleme, içerik yönetimi, kullanıcı yönetimi.  
 - İlerleme Takibi: Öğrencinin tamamladığı derslerin ve yüklediği projelerin durumlarını izlemesi.  
 
